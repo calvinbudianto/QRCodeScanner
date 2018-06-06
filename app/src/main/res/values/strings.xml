@@ -4,4 +4,9 @@
     <string name="result">Result will be here</string>
     <string name="website">Open Website</string>
     <string name="upload">Upload QR Code</string>
+    <string name="toast_message">Image Uploaded and Ready to Open!</string>
+    <string name="toast_message2">QR Code Read!</string>
+    <string name="toast_message3">Please select another image</string>
+    <string name="alert_title">Wrong Image</string>
+    <string name="alert_message">Please insert Image with QR Code</string>
 </resources>

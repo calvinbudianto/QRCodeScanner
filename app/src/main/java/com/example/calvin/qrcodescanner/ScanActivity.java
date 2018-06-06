@@ -5,6 +5,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.zxing.Result;
 
@@ -40,6 +41,8 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
 
     @Override
     public void handleResult(Result rawResult) {
+        Toast toast = Toast.makeText(this, R.string.toast_message2, Toast.LENGTH_LONG);
+        toast.show();
         //Do something with the result here
         Log.v("TAG", rawResult.getText());   //Prints scan result
         Log.v("TAG", rawResult.getBarcodeFormat().toString());   //prints the scan format(qrcode, pdf, etc)
